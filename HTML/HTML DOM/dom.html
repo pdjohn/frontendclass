@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML DOM</title>
+</head>
+<body>
+	
+	<form action="" name="jForm" id="jForm" onsubmit="showid()">
+		<p><input type="text" id="d" name="d" placeholder="Your Birth Date"></p>
+		<p><input type="text" id="m" name="m" placeholder="Your Birth Month"></p>
+		<p><input type="submit" value="Submit Name" ></p>
+		
+	</form>
+	<p id="para"></p>
+
+	
+	<button onclick="para()">Para</button>
+
+
+
+	<script>
+		function  para(){
+			var m = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quo, corrupti eos quos qui et commodi temporibus distinctio veritatis ea doloremque nam totam nihil. Labore similique, quas unde corrupti blanditiis!";
+			document.getElementById('para').innerHTML = m;
+		}
+	</script>
+	<script>
+			function show(){
+				var d,m;
+				d = Number(document.jForm.elements[0].value);
+				m = Number(document.jForm.elements[1].value);
+				document.write("Your Jodiac is = "+zodiac(d,m));
+			}
+	</script>
+
+		<script>
+			function showid(){
+				var d,m;
+				d = Number(document.getElementById('d').value);
+				m = Number(document.getElementById('m').value);
+				document.write("Your Jodiac is = "+zodiac(d,m));
+			}
+	</script>
+
+	<script>
+		function zodiac(d,m){
+	if(m==1 && d>=20 && d<=31 || m==2 && d>=1&&d<=18)
+		return ('Aquarius');
+	else if(m==2 && d>=19 && d<=29 || m==3 && d>=1&&d<=20)
+		return ('Pisces');
+	else if(m==3 && d>=21 && d<=31 || m==4 && d>=1&&d<=19)
+		return ('Aries');
+	else if(m==4 && d>=20 && d<=30 || m==5 && d>=1&&d<=20)
+		return ('Taurus');
+	else if(m==5 && d>=21&& d<=31 || m==6 && d>=1&&d<=20)
+		return('Gemini');
+	else if(m==6 && d>=21&& d<=30 || m==7 && d>=1&&d<=22)
+		return('Cancer');
+	else if(m==7 && d>=23&& d<=31 || m==8 && d>=1&&d<=22)
+		return('Leo');
+	else if(m==8 && d>=23&& d<=31 || m==9 && d>=1&&d<=22)
+		return('Virgo');
+	else if(m==9 && d>=23&& d<=30 || m==10 && d>=1&&d<=22)
+		return('Libra');
+	else if(m==10 && d>=23&& d<=31 || m==11 && d>=1&&d<=21)
+		return('Scorpio');
+	else if(m==11 && d>=22&& d<=30 || m==12 && d>=1&&d<=21)
+		return('Sagittarious');
+	else if(m==12 && d>=22&& d<=31 || m==1 && d>=1&&d<=19)
+		return('Capricorn');
+}
+
+	</script>
+</body>
+</html>

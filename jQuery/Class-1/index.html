@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery class 1</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div>
+		<!-- <p>Hello All</p> -->
+		<!-- <p class="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta similique, ex repellendus unde aliquid. Magnam nobis ut odio explicabo reprehenderit eligendi quasi, repudiandae. Dolore, quam est. Magni doloribus fugit, itaque.</p> -->
+		<!-- <button id="two">Button Fade Out</button>
+		<button id="three">Button Fade In</button>
+		<button id="four">Button Fade In & Out</button>
+		<button id="five">Button Fade To</button>
+		<div class="one"></div> -->
+		<button>stop Me</button>
+		<div class="click">
+			click me
+		</div>
+		<div class="open">
+			Hello All
+		</div>
+
+
+		<!-- <div class="one"></div>
+		<button>Click Me</button> -->
+
+	</div>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// $("#two").click(function(){
+			// 	$(".one").fadeOut(2500);
+			// });
+
+			// $("#three").click(function(){
+			// 	$(".one").fadeIn(2500);
+			// });
+
+			// $("#four").click(function(){
+			// 	$(".one").fadeToggle(3000);
+			// });
+			// $("#five").click(function(){
+			// 	$(".one").fadeTo(1500, .25);
+			// });
+
+			$(".click").click(function(){
+				$(".open").slideToggle(2500);
+			});
+
+			$("button").click(function(){
+				$(".open").stop(5000);
+			});
+
+
+			// $("button").click(function(){
+			// 	$(".one").animate({
+			// 		left: "450px",
+			// 		opacity:".25",
+			// 		height: "300px",
+			// 		width: "300px"
+			// 	}, 3500);
+			// });
+		});
+	</script>
+</body>
+</html>

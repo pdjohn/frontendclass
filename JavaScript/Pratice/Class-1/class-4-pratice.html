@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Class 4 pratice</title>
+</head>
+<body>
+<!-- 	<script>
+		//charAt(x)
+		var myString = 'jQuery!!!';
+		console.log(myString.charAt(2));
+		//output: F
+	</script> -->
+
+<!-- 	<script>
+		//charAt(position)
+		var message="jquery4u";
+		//alerts "q"
+		alert(message.charCodeAt(0));
+	</script> -->
+
+<!-- 	<script>
+		//concat(v1, v2,..)
+		var message="Sam";
+		var final=message.concat(" is a"," hopeless"," romantic.");
+		//alerts "Sam is a hopeless romantic."
+		alert(final)
+	</script> -->
+
+<!-- 	<script>
+		//fromCharCode(c1, c2,...)
+		console.log(String.fromCharCode(97,98,99,120,121,122));
+		//output: abcxyz
+		console.log(String.fromCharCode(72,69,76,76,79));
+		//output: HELLO
+	</script> -->
+
+<!-- 	<script>
+		var sentence="Hi, my name is Sam!";
+		if (sentence.indexOf("Sam")!=-1)
+		document.write(sentence.indexOf("Sam"));
+		alert("Sam is in there!");
+	</script> -->
+
+<!-- 	<script>
+		//lastIndexOf(substr, [start])
+		var myString = 'javascript rox';
+		console.log(myString.lastIndexOf('a'));
+		//output: 11
+	</script> -->
+
+<!-- 	<script>
+		//match(regexp) //select integers only
+		var intRegex = /[0-9 -()+]+$/;  
+
+		var myNumber = '999';
+		var myInt = myNumber.match(intRegex);
+		console.log(myInt);
+		//output: 999
+
+		var myString = '999 JS Coders';
+		var myInt = myString.match(intRegex);
+		console.log(myInt);
+		//output: null
+	</script> -->
+
+	<script>
+		//replace(substr, replacetext)
+		var myString = '999 JavaScript Coders';
+		console.log(myString.replace(/JavaScript/i, "jQuery"));
+		//output: 999 jQuery Coders
+
+		//replace(regexp, replacetext)
+		var myString = '999 JavaScript Coders';
+		console.log(myString.replace(new RegExp( "999", "The")));
+		//output: The JavaScript Coders
+	</script>
+
+<!-- 	<script>
+		//search(regexp)
+		var intRegex = /[0-9 -()+]+$/;  
+
+		var myNumber = 'ppp999';
+		var isInt = myNumber.search(intRegex);
+		console.log(isInt);
+		//output: 0
+
+		var myString = '999 JS Coders';
+		var isInt = myString.search(intRegex);
+		console.log(isInt);
+		//output: -1
+	</script> -->
+ 
+<!-- 	<script>
+		//slice(start, end)
+		var text="excellent";
+		document.write(text.slice(0,4)+'<br>'); //returns "exce"
+		document.write(text.slice(2,4)); //returns "ce"
+	</script> -->
+
+<!-- 	<script>
+		//split(delimiter)
+		var message="Welcome to jQuery4u";
+		//word[0] contains "We"
+		//word[1] contains "lcome to jQuery4u"
+		var word=message.split("l");
+		document.write(word);
+	</script> -->
+
+<!-- 	<script>
+		//substring(from, to)
+		var text="excellent"
+		document.write(text.substr(0,4)+'<br>'); //returns "exce"
+		document.write(text.substr(2,4)+'<br>'+'<br>'); //returns "ce"
+	</script> -->
+
+<!-- 	<script>
+		//substring(from, [to])
+		var myString = 'excellent';
+		myString = myString.substring(2,4);
+		document.write(myString);
+		//output: javascript
+	</script> -->
+
+<!-- 	<script>
+		//toLowerCase()
+		var myString = 'JAVASCRIPT ROX';
+		myString = myString.toLowerCase();
+		console.log(myString)
+		//output: javascript rox
+	</script> -->
+
+<!-- 	<script>
+		//toUpperCase()
+		var myString = 'javascript rox';
+		myString = myString.toUpperCase();
+		console.log(myString)
+		//output: JAVASCRIPT ROX
+	</script> -->
+</body>
+</html>

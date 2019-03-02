@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pratice</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="css/pratice.css">
+
+</head>
+<body>
+	<a href="images/test-img-1.jpg" data-lightbox="image" data-title="This is image-1">
+		<img src= "images/test-img-1.jpg" alt="Image-1">
+	</a>
+
+	<a href="images/test-img-2.jpg" data-lightbox="image" data-title="This is image-2">
+		<img src= "images/test-img-2.jpg" alt="Image-2">
+	</a>
+
+	<a href="images/test-img-3.jpg" data-lightbox="image" data-title="This is image-3">
+		<img src= "images/test-img-3.jpg" alt="Image-3">
+	</a>
+
+	<a href="images/test-img-4.jpg" data-lightbox="image" data-title="This is image-4">
+		<img src= "images/test-img-4.jpg" alt="Image-4">
+	</a>
+
+
+
+	<div class="counter-up">
+		<div class="counter">1000</div>
+		<div class="counter">2000</div>
+		<div class="counter">3000</div>
+		<div class="counter">4000</div>
+	</div>
+
+	<div class="slide">
+		<div class="owl-carousel">
+		    <div class="item">
+		    	<img src="images/test-img-1.jpg" alt="image-1">
+		    </div>
+		    <div class="item">
+		    	<img src="images/test-img-2.jpg" alt="image-1">
+		    </div>
+		    <div class="item">
+		    	<img src="images/test-img-3.jpg" alt="image-1">
+		    </div>
+		    <div class="item">
+		    	<img src="images/test-img-4.jpg" alt="image-1">
+		    </div>
+		</div>
+	</div>
+
+	<div id="test" class="gmap3"></div>
+
+
+
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+
+	<script type="text/javascript" src="js/lightbox.min.js"></script>
+	<script>
+	    lightbox.option({
+	      'resizeDuration': 1000,
+	      'wrapAround': false,
+	      'fadeDuration': 2000
+	    })
+	</script>
+
+
+
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script>
+	    jQuery(document).ready(function( $ ) {
+	        $('.counter').counterUp({
+	            delay: 10,
+	            time: 1000
+	        });
+	    });
+	</script>
+
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+
+	<script type="text/javascript">
+		$('.owl-carousel').owlCarousel({
+		    items: 4,
+		    loop:true,
+		    nav:true,
+		    dots:false,
+		    autoplay : true,
+		    autoplayTimeout: 2000,
+		    autoplayHoverPause:true,
+		    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+		        600:{
+		            items:2
+		        },
+		        1000:{
+		            items:3
+		        }
+		    }
+		})
+	</script>
+
+	<script type="text/javascript" src="js/gmap3.min.js"></script>
+	<script>
+  $(function () {
+    var cluster, marker;
+
+    $('#test')
+      .gmap3({
+        center: [46.578498,2.457275],
+        zoom: 4,
+      })
+      .cluster({
+          size: 200,
+          markers: [
+            {position: [49.28952958093682, 6.152559438984804]},
+            {position: [44.28952958093682, 6.152559438984804]},
+            {position: [49.28952958093682, -1.1501188139848408]},
+            {position: [44.28952958093682, -1.1501188139848408]}
+          ],
+          cb: function (markers) {
+            if (markers.length > 1) { // 1 marker stay unchanged (because cb returns nothing)
+              return {
+                content: "<div class='cluster cluster-1'>" + markers.length + "</div>",
+                x: -26,
+                y: -26
+              };
+            }
+          }
+      })
+      .then(function (_cluster) {
+        cluster = _cluster;
+      })
+      .marker({
+        position:[50.92104315206032, 2.1936031249999814],
+        draggable: true
+      })
+      .then(function (_marker) {
+          marker = _marker;
+      })
+      .on({
+        click: function () {
+          alert("I was the one !")
+        }
+      })
+    ;
+
+    $('button').click(function () {
+      cluster.add(marker);
+    });
+  });
+</script>
+
+	
+	
+
+</body>
+</html>

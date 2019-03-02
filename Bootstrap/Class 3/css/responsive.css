@@ -1,0 +1,106 @@
+/*Mobile Devices*/
+@media (min-width: 275px) and (max-width: 767px) { 
+.navbar-brand > img {
+    margin-top: 0;
+    width: 180px;
+}
+
+.banner-logo {
+    font-size: 32px;
+}
+
+.banner-text h1 {
+    font-size: 42px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+
+.carousel-caption {
+    top: -25px;
+}
+
+.carousel-caption h2 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.carousel-caption h1 {
+    font-size: 20px;
+}
+
+.carousel-caption h3 {
+    font-size: 15px;
+}
+
+.about-text h3 {
+    margin-top: 30px;
+}
+
+.portfolio-content img{
+    width: 100%;
+}
+
+.thumbnail .caption h3 {
+    font-size: 20px;
+}
+
+.thumbnail {
+    margin-bottom: 30px;
+}
+
+}
+
+@media (min-width: 275px) and (max-width: 320px) { 
+.section-head h2::before {
+    left: 20.5%;
+}
+
+.section-head h2::after {
+    left: 28.5%;
+}
+
+}
+
+@media (min-width: 321px) and (max-width: 480px) { 
+.section-head h2::before {
+    left: 30.5%;
+}
+
+.section-head h2::after {
+    left: 35.5%;
+}
+
+}
+
+@media (min-width: 481px) and (max-width: 640px) { 
+.section-head h2::before {
+    left: 35.5%;
+}
+
+.section-head h2::after {
+    left: 39.5%;
+}
+
+}
+
+/*Small devices*/
+@media (min-width: 678px) and (max-width: 991px) { 
+.navbar-brand > img {
+    width: 185px;
+}
+
+.nav > li > a {
+    padding: 10px;
+}
+
+}
+
+/*Medium devices*/
+@media (min-width: 992px) and (max-width: 1199px) { 
+
+}
+
+/*Large devices*/
+@media (min-width: 1200px) and (max-width: 1920px) { 
+
+}

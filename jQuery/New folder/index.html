@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>class 2</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, dicta, atque assumenda obcaecati dolor voluptas, est dolorem eligendi doloribus eos quidem. Accusamus expedita ea neque, perferendis perspiciatis distinctio veniam ipsa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A illo rerum, veritatis perferendis, consequuntur dolores nemo. Dignissimos iure culpa recusandae atque possimus commodi earum? Error consequatur rerum tenetur, officia animi!</p> <br><br> -->
+	
+	<div class="boxone">Box one</div>
+	<div class="boxtwo">Box two</div>
+	<!-- <button id="one">Slide Up</button><br>
+	<button id="two">Slide Down</button> -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#one").click(function(){
+				$("p").hide(5000)
+			});
+			$(document).ready(function(){
+				$("#two").click(function(){
+				$("p").show(5000)
+				});
+			});
+
+			$(document).ready(function(){
+				$(".boxone").click(function(){
+					$(".boxtwo").slideDown(5000)
+				});
+			});
+		});
+	</script>
+
+
+</body>
+</html>

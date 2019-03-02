@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+table{
+	border-collapse: collapse;
+	text-align: center;
+	
+}
+
+
+table,
+th,td{
+	border:1px solid red;
+	padding: 10px;	
+}
+th{
+	width: 300px;
+	background-color: yellow;
+}
+tr:nth-child(odd){
+	background-color: gray;
+}
+
+tr:hover{
+	background-color: green;
+}
+
+
+.one{
+	width: 300px;
+	height: 300px;
+	background-color: red;
+	animation-name: example;
+	animation-duration: 3s;
+	animation-timing-function: ease;
+	/*animation-delay: 5s;*/
+	animation-iteration-count: 3;
+	/*animation-direction: reverse;*/
+	position: relative;
+}
+
+/*@keyframes example{
+	from{
+		background: yellow;
+		width: 300px;
+	}
+	to{
+		background-color: blue;
+		width: 250px;
+	}
+}*/
+
+@keyframes example{
+	0%{
+		left: 0;
+		top: 0;
+		background-color: red;
+	}
+	25%{
+		left: 500px;
+		top: 0;
+		background-color: green;
+	}
+	50%{
+		left: 500px;
+		top: 500px;
+		background-color: blue;
+	}
+	75%{
+		left: 0;
+		top: 500px;
+		background-color: yellow;
+	}
+	100%{
+		left: 0;
+		top: 0;
+		background-color: black;
+	}
+}
+
+.btn{
+	width: 150px;
+	height: 50px;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	
+}
+
+.two{
+	position: relative;
+	/*display: inline-block;*/
+}
+
+.dropdown{
+	position: absolute;
+	display: none;
+	width: 150px;
+	background-color: #fff;
+	color: #000;
+	padding: 10px 0;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
+}
+
+.dropdown li{
+	font-size: 20px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.two:hover .dropdown{
+	display: block;
+}

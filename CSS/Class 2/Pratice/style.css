@@ -1,0 +1,36 @@
+#one{
+	width: 250px;
+	height: 300px;
+	background-color: green;
+}
+.one{
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 8px;
+	margin-left: 15px;
+}
+
+.one{
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 25px
+	padding-left: 50px;
+}
+
+.one{
+	border-width: 5px;
+	border-color: black;
+	border-style: solid;
+}
+
+.one{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 30px;
+}
+
+.one{
+	box-shadow: 2px 5px 10px 20px rgba(0,0,0,.7);
+
+}

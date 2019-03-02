@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>pratice</title>
+</head>
+<body>
+
+	<textarea name="iname" id="name"></textarea> <br> <br>
+		<button onclick="sub()">Submit</button>
+
+	<p id="put"></p>
+
+	<script>
+
+		function sub(){
+			var text = document.getElementById('name').value;
+			document.getElementById('put').innerHTML = text;
+			//alert(text);
+		}
+
+	</script>
+
+</body>
+</html>

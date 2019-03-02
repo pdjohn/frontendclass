@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.one,
+.two,
+.three,
+.four{
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+	
+}
+
+
+.one{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	-webkit-transform: translate(50px,100px);
+	-moz-transform: translate(50px,100px);
+	-ms-transform: translate(50px,100px);
+	-o-transform: translate(50px,100px);
+	transform: translate(50px,100px);
+}
+.one:hover{
+	-webkit-transform: translate(70px,120px);
+	-moz-transform: translate(70px,120px);
+	-ms-transform: translate(70px,120px);
+	-o-transform: translate(70px,120px);
+	transform: translate(70px,120px);
+			
+}
+
+
+.two{
+	width: 250px;
+	height: 250px;
+	margin-top: 170px;
+	margin-left: 70px;
+	background-color: blue;
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+	transform: rotate(30deg);	
+}
+.two:hover{
+	-webkit-transform: rotate(100deg);
+	-moz-transform: rotate(100deg);
+	-ms-transform: rotate(100deg);
+	-o-transform: rotate(100deg);
+	transform: rotate(100deg);
+}
+
+
+.three{
+	width: 300px;
+	height: 300px;
+	background-color: black;
+	margin-top: 130px;
+	margin-left: 170px;
+	-webkit-transform: scale(1,1.5);
+	-moz-transform: scale(1,1.5);
+	-ms-transform: scale(1,1.5);
+	-o-transform: scale(1,1.5);
+	transform: scale(1,1.5);
+}
+.three:hover{
+	-webkit-transform: scale(1.5,2);
+	-moz-transform: scale(1.5,2);
+	-ms-transform: scale(1.5,2);
+	-o-transform: scale(1.5,2);
+	transform: scale(1.5,2);
+}
+
+.four{
+	width: 350px;
+	height: 350px;
+	background-color: green;
+	margin-top: 130px;
+	margin-left: 170px;
+	
+}
+.four:hover{
+	-webkit-transform: skew(30deg,10deg);
+	-moz-transform: skew(30deg,10deg);
+	-ms-transform: skew(30deg,10deg);
+	-o-transform: skew(30deg,10deg);
+	transform: skew(30deg,10deg);
+}
+
+.five{
+	width: 400px;
+	height: 400px;
+	background-color: red;
+	margin-top: 100px;
+	margin-left: 170px;
+	background: repeating-linear-gradient(45deg,blue 20%,yellow 30%);
+	background: -webkit-repeating-linear-gradient(45deg,blue 20%,yellow 30%);
+	background: -moz-repeating-linear-gradient(45deg,blue 20%,yellow 30%);
+	background: -o-repeating-linear-gradient(45deg,blue 20%,yellow 30%);
+}
+
+.six{
+	width: 450px;
+	height: 300px;
+	background-color: black;
+	margin-top: 100px;
+	margin-left: 100px;
+	background: repeating-radial-gradient(ellipse, white 15%, green 25%, red 35%);
+	background: -webkit-repeating-radial-gradient(ellipse, white 15%, green 25%, red 35%);
+	background: -moz-repeating-radial-gradient(ellipse, white 15%, green 25%, red 35%);
+	background: -o-repeating-radial-gradient(ellipse, white 15%, green 25%, red 35%);
+}

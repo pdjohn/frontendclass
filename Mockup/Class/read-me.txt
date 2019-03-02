@@ -1,0 +1,3 @@
+Theme Color : #FF533D;
+
+Font Name : OpenSans;

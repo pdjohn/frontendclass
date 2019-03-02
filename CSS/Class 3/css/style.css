@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.one{
+	width: 350px;
+	height: 250px;
+	background-color: red;
+	position: relative;
+	
+}
+
+.two {
+    width: 250px;
+    height: 150px;
+    background-color: blue;
+    position: absolute;
+    top: 7.5%;
+    left: 3.5%;
+}
+
+.three{
+	width: 300px;
+	height: 300px;
+	background-color: green;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
+
+.four{
+	background-color: red;
+	width: 300px;
+	height: 300px;
+	float: left;
+	margin-right: 30px;
+
+}
+
+p{
+	text-align: justify;
+	
+}
+
+.five{
+	background-color: pink;
+	width: 300px;
+	height: 300px;
+	float: right;
+	margin-left: 30px;
+	
+}
+
+.over{
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.list ul{
+	/*width: 300px;*/
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.list ul li{
+	padding: 15px;
+	border: 1px solid red;
+	margin: 10px;
+	background-color: #eee;
+	/*float: left;
+	list-style: none;*/
+	display: inline-block;
+	transition-property: all;
+	transition-duration: 2s;
+	transition-delay: 1s;
+	transition-timing-function: ease-in-out;
+
+}
+
+.list ul li a{
+	text-decoration: none;
+	color: #333;
+	font-size: 18px;
+}
+
+.list ul li:hover{
+	background-color: red;
+
+	
+}
+
+.list ul li:hover a{
+	color: #fff;
+	text-decoration: underline;
+}
+
+.seven{
+	background-color: red;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	-webkit-transition: all .5s 1s ease-in-out;
+	-moz-transition: all .5s 1s ease-in-out;
+	-ms-transition: all .5s 1s ease-in-out;
+	-o-transition: all .5s 1s ease-in-out;
+	transition: all .5s 1s ease-in-out;
+}
+
+.seven:hover{
+	width: 300px;
+	height: 300px;
+	background-color: black;
+
+	
+}

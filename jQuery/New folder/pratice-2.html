@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pratice class 2</title>
+
+	<style>
+		.remove-box{
+			width: 150px;
+			height: 150px;
+			background-color: red;
+			color: #fff;
+		}
+
+		.addclass{
+			font-size: 50px;
+			color: blue;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		.css{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+	</style>
+
+</head>
+<body>
+	
+	<!-- <p>work hard</p>
+	<button id="one">Append</button>
+	<button id="two">Prepend</button> 
+	<br><br>
+	<img src="images/test-img.jpg" alt="Image"><br><br>
+	<button id="three">Before</button>
+	<button id="four">After</button> -->
+
+
+	<!-- <div class="remove-box">
+		<p>One</p>
+		<p>Two</p>
+		<p>Three</p>
+	</div>
+	<button id="five">Remove</button>
+	<button id="six">Empty</button> -->
+
+	<p class="cssclass">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio magni, consequatur minima tempore? Omnis laudantium architecto sequi nisi asperiores eaque eveniet perspiciatis laboriosam minus in doloremque iste, itaque culpa, aspernatur!</p>
+	<button id="seven">Add Class</button>
+	<button id="eight">Remove Class</button>
+	<button id="nine">Toggle Class</button>
+
+
+<!-- 	<div class="css"></div>
+	<button id="ten">Css property</button>
+	<button id="eleven">Css Proterties</button> -->
+
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			// $("#one").click(function(){
+			// 	$("p").append(" to achive success");
+			// });
+
+			// $("#two").click(function(){
+			// 	$("p").prepend(" You have to ");
+			// });
+
+			// $("#three").click(function(){
+			// 	$("img").before(" This is an image ");
+			// });
+
+			// $("#four").click(function(){
+			// 	$("img").after(" of বসন্ত উৎসব");
+			// });
+
+			// $("#five").click(function(){
+			// 	$(".remove-box").remove();
+			// });
+			// $("#six").click(function(){
+			// 	$(".remove-box").empty();
+			// });
+
+			// $("#seven").click(function(){
+			// 	$(".cssclass").addClass("addclass");
+			// });
+			// $("#eight").click(function(){
+			// 	$(".cssclass").removeClass("addclass");
+			// });
+			$("#nine").click(function(){
+				$(".cssclass").toggleClass("addclass");
+			});
+				// $("#ten").click(function(){
+				// 	$(".css").css("background-color" , "black");
+				// });
+				// $("#eleven").click(function(){
+				// 	$(".css").css({"background-color":"green","height":"100px","width":"100px"});
+				// });
+		});
+	</script>
+</body>
+</html>

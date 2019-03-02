@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery pratice 1</title>
+	<style>
+		.one{
+			width: 200px;
+			height: 200px;
+			background-color: black;
+			margin: 0 auto;
+			position: absolute;
+			top: 10%;
+		}
+		
+	</style>
+</head>
+<body>
+
+	<!-- <div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet labore et quae eius, explicabo inventore. Non illo rerum ex sequi laborum itaque quas eum, amet, neque voluptatibus, minima eveniet obcaecati.</p>
+	</div>
+	<input type="text" name="text">
+	<button id="one">Click</button> <br>
+	<button id="two">Hide me</button> <br>
+	<button id="three">Show me</button> <br>
+	<button id="four">Hide and Seek</button> <br> <br> <br>
+
+	<button id="five">Fade out</button> <br>
+	<button id="six">Fade in</button><br>
+	<button id="seven">Fade Toggle</button> <br>
+	<button id="eight">Fade To</button> <br> <br> <br>
+
+	<button id="nine">Slide down</button> <br>
+	<button id="ten">Slide up</button> <br>
+	<button id="eleven">Slide toggle</button> <br> -->
+
+	<div class="one"></div>
+	<button>Click me</button> <br><br>
+
+	<button class="two">Stop it</button>
+
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#three").click(function(){
+				$("p").show('fast');
+			});
+			$("#two").click(function(){
+				$("p").hide('slow');
+			});
+			$("#four").click(function(){
+				$("p").toggle(5000);
+			});
+
+			$("#five").click(function(){
+				$("p").fadeOut(5000);
+			});
+			$("#six").click(function(){
+				$("p").fadeIn(5000);
+			});
+			$("#seven").click(function(){
+				$("p").fadeToggle(5000);
+			});
+			$("#eight").click(function(){
+				$("p").fadeTo(5000, .25);
+			});
+
+			$("#nine").hover(function(){
+				$("p").slideDown(5000);
+			});
+			$("#ten").hover(function(){
+				$("p").slideUp(5000);
+			});
+			$("#eleven").hover(function(){
+				$("p").slideToggle(5000);
+			});
+
+			$("button").click(function(){
+				$(".one").animate({
+					left: "500px",
+					// opacity: ".2",
+					height: "400px",
+					width: "400px"
+				}, 5000);
+			});
+			$(".two").click(function(){
+				$(".one").stop();
+			});
+		});
+	</script>
+
+</body>
+</html>

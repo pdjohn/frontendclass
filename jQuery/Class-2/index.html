@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Class 2</title>
+
+	<style type="text/css">
+		/*.box,
+		.box-one{
+			width: 150px;
+			height: 150px;
+			background-color: red;
+			color: #fff;
+		}*/
+
+		/*.color{
+			color: red;
+		}*/
+
+		.rkd{
+			font-size: 50px;
+			color: blue;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		/*.other{
+			font-size: 30px;
+			text-transform: capitalize;
+			color: pink;
+		}*/
+
+
+		.test{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<!-- <p>This is a text</p>
+	<ol>
+		<li>tttttttttt</li>
+		<li>tttttttttt</li>
+		<li>tttttttttt</li>
+	</ol>
+	<img src="images/test-img.jpg" alt="Image"><br><br>
+
+	<button class="btn-one">Add append</button>
+	<button class="btn-two">Add prepend</button>
+	<button class="btn-after">Add after</button>
+	<button  class="btn-before">Add before</button> -->
+
+
+	<!-- <div class="box">
+		<p>text one</p>
+		<p>text two</p>
+		<p>text three</p>
+	</div>
+
+		<div class="box-one">
+		<p>text one</p>
+		<p>text two</p>
+		<p>text three</p>
+	</div>
+
+	<button class="box-btn">Remove Me</button>
+
+	<button class="empty-btn">Empty Me</button> -->
+
+
+	<p>Here a text</p>
+	<h1>this is a heading text</h1>
+	<p class="john">Here a text</p>
+
+	<button class="btn-three">add class</button>
+
+
+	<p>other text here</p>
+
+	<!-- <div class="test"></div>
+
+	<button class="btn-four">add css</button>
+ -->
+
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			// $(".btn-one").click(function(){
+			// 	$("p").append(" <b>Add an append text</b>")
+			// });
+
+			// $(".btn-two").click(function(){
+			// 	$("p").prepend("<b>Add a prepend text</b> ")
+			// });
+
+			// $(".btn-after").click(function(){
+			// 	$("img").after("<b>Add a text after img</b> ")
+			// });
+
+			// $(".btn-before").click(function(){
+			// 	$("img").before("<b>Add a text before img</b> ")
+			// });
+
+			// $(".box-btn").click(function(){
+			// 	$(".box, .box-one").remove();
+			// });
+
+			// $(".empty-btn").click(function(){
+			// 	$(".box, .box-one").empty();
+			// });
+
+			$(".btn-three").click(function(){
+				$("p, h1").addClass("color rkd");
+				$("p").addClass("rkd");
+
+				$("p.john").addClass("other");
+
+				$("p").removeClass("rkd");
+
+				$("p").toggleClass("rkd");
+			});
+
+
+			$(".btn-four").click(function(){
+				$("div.test").css("background-color" : "green" );
+			});
+
+
+
+		});
+	</script>
+</body>
+</html>

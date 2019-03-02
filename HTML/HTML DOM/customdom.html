@@ -1,0 +1,26 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+		
+	
+		<textarea name="iText" id="iText"> </textarea>
+		<button onclick="newpara()">hello</button>
+
+
+	<p id="paranew">Lorem</p>
+
+		<script>
+		function newpara(){
+			var text = document.getElementById('iText').value;
+			
+			document.getElementById('paranew').innerHTML  = text;
+
+			alert(text);
+		}
+	</script>
+	</body>
+	</html>

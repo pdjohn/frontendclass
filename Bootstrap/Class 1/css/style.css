@@ -1,0 +1,48 @@
+.navbar-default {
+    background-color: #9c1212;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a:hover  {
+    color: #fff;
+    background-color: #8a8a8a;
+}
+
+.thumbnail {
+    padding: 0;
+    margin-bottom: 0;
+    background-color: blue;
+    border: 1px solid red;
+    border-radius: 0;
+    
+}
+
+.thumbnail .caption {
+    padding: 10px 12px;
+    color: #fff;
+}
+
+.btn,
+.btn:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 0;
+    background-color: gray;
+    color: #fff;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: red;
+}

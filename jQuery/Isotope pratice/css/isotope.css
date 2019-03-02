@@ -1,0 +1,11 @@
+.filter-container{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.list-inline li{
+
+}
+.list-inline li span{
+	padding: 10px;
+}

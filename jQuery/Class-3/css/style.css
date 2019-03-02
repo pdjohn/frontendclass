@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.lightbox .lb-image {
+    border-radius: 0;
+    border: 1px solid red;
+}
+
+.counter-up,
+.slider{
+	padding: 100px 0px;
+}
+
+.counter{
+	font-size: 100px;
+	font-weight: bold;
+	float: left;
+	margin-right: 50px;
+}
+
+.gmap3{
+	width: 100%;
+	height: 350px;
+}

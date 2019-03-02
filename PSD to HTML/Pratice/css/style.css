@@ -1,0 +1,124 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+ body{
+ 	font-family: 'Roboto', sans-serif;
+ 	font-size: 15px;
+ 	color: #333;
+ }
+
+ .container{
+ 	width: 1200px;
+ 	margin: 0 auto;
+ }
+
+/*All Transitions*/
+.menu-content ul li a{
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+
+/*Theme color*/
+.menu-content ul li a:hover,
+.menu-content .active a,
+.banner-content h1 span{
+	color:#87d37c;
+}
+/*overflow of all*/
+#header,
+#about{
+	overflow: hidden;
+}
+
+
+#header{
+	background: url(../images/banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.header-overlay{
+	background: rgba(0, 0, 0, .35);
+}
+
+.header-area{
+	padding-bottom: 200px;
+}
+
+.logo{
+	float: left;
+}
+
+.menu-content {
+	float: right;
+	margin-top: 35px;
+}
+
+.menu-content ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.menu-content ul li{
+	display: inline-block;
+}
+
+.menu-content ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 30px;
+}
+
+.banner-area{
+	padding: 150px 0;
+}
+
+.banner-content{
+	width: 770px;
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+}
+
+.banner-content h2{
+	font-size: 48px;
+	font-weight: 400;
+}
+
+.banner-content h1{
+	font-size: 100px;
+	font-weight: 700;
+	border:2px solid #fff;
+	padding: 25px 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.banner-content h3{
+	font-size: 36px;
+	font-weight: 400;
+}
+
+/*about*/
+
+.section-head{
+	width: 770px;
+	margin: 0 auto 50px;
+	text-align: center;
+}
+
+.section-head h2{
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+#about{
+	padding: 100px 0;
+}

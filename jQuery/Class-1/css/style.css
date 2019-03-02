@@ -1,0 +1,34 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.one{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	margin: 0 auto;
+	position: absolute;
+	top: 10%
+}
+
+.click,
+.open{
+	width: 500px;
+	padding: 15px 50px;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.click{
+	background-color: red;
+	margin-top: 50px;
+}
+
+.open{
+	background-color: blue;
+	padding: 100px 50px;
+	display: none;
+}
